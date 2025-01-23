@@ -1,0 +1,126 @@
+<%- include("includes/head.ejs"); %>
+<section class="skills-area">
+    <div class="skills-wrapper">
+        <h2 class="skills-title">My Skills</h2>
+        <p class="skills-description">
+            Below are some of the technologies I use to build efficient and scalable web applications.
+        </p>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?logo=mongodb&logoColor=white" alt="MongoDB" class="skill-icon">
+                <h3 class="skill-name">MongoDB</h3>
+            </div>
+            <div class="skill-item">
+                <img src="https://img.shields.io/badge/Express.js-%23404d59.svg?logo=express&logoColor=%2361DAFB" alt="Express.js" class="skill-icon">
+                <h3 class="skill-name">Express.js</h3>
+            </div>
+            <div class="skill-item">
+                <img src="https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB" alt="React" class="skill-icon">
+                <h3 class="skill-name">React</h3>
+            </div>
+            <div class="skill-item">
+                <img src="https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white" alt="Node.js" class="skill-icon">
+                <h3 class="skill-name">Node.js</h3>
+            </div>
+            <div class="skill-item">
+                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000" alt="JavaScript" class="skill-icon">
+                <h3 class="skill-name">JavaScript</h3>
+            </div>
+            <div class="skill-item">
+                <img src="https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white" alt="HTML" class="skill-icon">
+                <h3 class="skill-name">HTML5</h3>
+            </div>
+            <div class="skill-item">
+                <img src="https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff" alt="CSS" class="skill-icon">
+                <h3 class="skill-name">CSS3</h3>
+            </div>
+            <div class="skill-item">
+                <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff" alt="Git" class="skill-icon">
+                <h3 class="skill-name">Git</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    /* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Skills Section */
+.skills-area {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.skills-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-title {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.skills-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.skill-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+
+
+<%- include("includes/footer.ejs"); %>

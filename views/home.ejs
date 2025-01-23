@@ -1,0 +1,94 @@
+<%- include("includes/head.ejs"); %>
+    <div class="container">
+        <div class="content">
+            <h2 class="align-middle">I'm a <span class="auto-type"></span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo unde nostrum magnam suscipit debitis
+                accusantium repudiandae optio illum facilis? Illum sunt vel eveniet natus qui quasi eligendi dolorem
+                delectus iusto.</p>
+                <button class="btn btn-light">hire</button>
+        </div>
+        <div class="img">
+            <img src="/images/portraitimg.png" alt="user">
+        </div>
+    </div>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #9d9de76d;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 85vh;
+}
+
+.content {
+    max-width: 600px;
+    margin-right: 40px;
+    margin-left: 5px;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+span{
+    color:#d81f1f;
+}
+
+.content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.img {
+    flex-shrink: 0;
+    max-width: 700px;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .img {
+        max-width: 80%;
+    }
+}
+
+
+
+
+        
+    </style>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        const typed = new Typed(".auto-type", {
+            strings: ["Programmer", "Coder", "Web Developer"],
+            typeSpeed: 300,
+            backspeed: 300,
+            loop: true
+        })
+    </script>
+    
+   
+    <%- include("includes/footer.ejs"); %>
