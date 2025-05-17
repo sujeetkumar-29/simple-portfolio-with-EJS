@@ -13,7 +13,7 @@ This is a personal portfolio project built using EJS (Embedded JavaScript) templ
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/portfoliowithEJS.git
+    git clone https://github.com/sujeetkumar-29/simple-portfolio-with-EJS.git
     ```
 2. Navigate to the project directory:
     ```bash
